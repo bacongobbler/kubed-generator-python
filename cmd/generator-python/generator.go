@@ -57,8 +57,8 @@ metadata:
   name: {{ template "{% .AppName %}.{% .Name %}.name" . }}
   labels:
     kubed: {{ template "{% .AppName %}.name" . }}
-	component: {% .Name %}
-	generator: python
+    component: {% .Name %}
+    generator: python
 spec:
   selector:
     matchLabels:
@@ -88,8 +88,8 @@ metadata:
   name: {{ template "{% .AppName %}.{% .Name %}.name" . }}
   labels:
     kubed: {{ template "{% .AppName %}.name" . }}
-	component: {% .Name %}
-	generator: python
+    component: {% .Name %}
+    generator: python
 spec:
   selector:
     kubed: {{ template "{% .AppName %}.name" . }}
